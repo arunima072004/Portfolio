@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunima Sakharkar | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #6366f1;
+      --secondary-color: #a5b4fc;
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-color: #f8fafc;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 3rem;
+      background: var(--primary-color);
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--secondary-color);
+    }
+
+    .hero {
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 250px;
+      height: 250px;
+      border-radius: 0%;
+
+    }
+
+    .hero a {
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      display: inline-block;
+    }
+
+    .hero a:hover {
+      background: var(--secondary-color);
+    }
+
+    section {
+      padding: 2.5rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-card h3 {
+      margin-top: 0;
+    }
+
+    .skill-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skill-card li {
+      padding: 0.3rem 0;
+    }
+
+    .project {
+      background: #374151;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(229, 180, 180, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+      background: var(--primary-color);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .project a:hover {
+      background: var(--secondary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111827;
+      color: var(--text-color);
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-icons a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: var(--primary-color);
+    }
+    
+    #education {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Arunima Sakharkar</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hackathons">Hackathons</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+        <img src="https://i.ibb.co/whMGXKVZ/myphoto-cropped.jpg" alt="myphoto-cropped" border="0">
+      <h2>Aspiring AI/ML Engineer | CSE Undergrad | Tech Enthusiast</h2>
+      <a href="https://www.linkedin.com/in/arunima-sakharkar-5b4792289/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/arunima072004" target="_blank">GitHub</a>
+      <a href="resume.pdf" download>Resume</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a 2nd-year B.Tech student in Computer Science Engineering specializing in Artificial Intelligence and Machine Learning. I’m passionate about building intelligent systems and exploring data-driven solutions. Originally from Nagpur, Maharashtra, I’m currently pursuing my studies at Vellore Institute of Technology, Chennai, where I actively explore innovative applications of AI/ML in real-world scenarios.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C/C++</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>AI/ML Tools</h3>
+          <ul>
+            <li>TensorFlow</li>
+            <li>scikit-learn</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>OpenCV</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Other Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Jupyter Notebook</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Eco Nexus</h3>
+        <p>AI-powered, open-source platform for real-time energy monitoring, predictive analytics, and community-driven sustainability built with React, TypeScript, Vite & TensorFlow.js.</p>
+        <p><strong>Technologies:</strong> React, TypeScript, Vite, TensorFlow.js</p>
+        <a href="https://github.com/arunima072004/Econexusx" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://econexus.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+      </div>
+      <div class="project">
+        <h3>Spotify Clone</h3>
+        <p>Just my try to clone the biggest music platform</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React</p>
+        <a href="https://github.com/arunima072004/arufy" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://arufy.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+      </div>
+    </section>
+
+    <section id="hackathons">
+      <h2>Hackathon Participation</h2>
+      <ul>
+        <li><strong>DevsHouse'25 :</strong> Built a real-time energy platform with predictive analytics for fault detection and efficiency improvement</li><br>
+        <li><strong>Innovat X Impact :</strong> Built a web app to track carbon footprint collaboratively.</li><br>
+        <li><strong>Greenathon : </strong>Presented the idea of an industry level energy conservation help platform </li><br>
+      </ul>
+    </section>
+    <section id="education">
+        <h1>Education</h2>
+        <div class="education-card">
+          <h3>B.Tech in Computer Science Engineering (AI & ML)</h3>
+          <p>Vellore Institute of Technology, Chennai  (2023 - 2027)    </p>
+          
+          <p>CGPA: 8.56</p>
+        </div>
+      </section>
+      
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-icons">
+        <a href="mailto:arunimasakharkar7@gmail.com"><i class="fas fa-envelope"></i> arunimasakharkar7@gmail.com</a>
+        <a href="https://www.linkedin.com/in/arunima-sakharkar-5b4792289/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/arunima072004" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.instagram.com/imaddictedtowater_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Arunima Sakharkar. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
